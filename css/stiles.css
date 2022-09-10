@@ -434,7 +434,9 @@ section{
     color:  var(--title-text-color);
     font-weight: 500;
     text-align: center;
+    box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .action{
     display: flex;
     padding: 0 32px;
@@ -453,9 +455,15 @@ svg{
     border: none;
     border-radius: 50%;
     background-color: var(--primary-bg-color);
-   
+   fill: var(--icon-fill-color);
     
    } 
+
+   .button-icon:hover,
+   .button-icon:focus{
+    background-color: var(--active-link-color);
+    fill: var(--primary-bg-color);
+   }
 
    .button-icon-active{
     
@@ -467,12 +475,9 @@ svg{
     height: 44px;
    }
    
-   .instagram{
-    color: var(--primary-bg-color);
-   }
-   .twitter{
-    fill: var(--icon-fill-color);
-   }
+  .instagram{
+    fill: var(--primary-bg-color);
+  }
    .icon-social{
     margin-left: 10px;
    }
@@ -502,13 +507,23 @@ svg{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
+    fill: var(--icon-fill-color);
+    
+}
+
+.client-icon:hover,
+.client-icon:focus{
+fill: var(--active-link-color);
+
 }
 .client-item{
     margin-left: 30px;
+    
 }
 .client-item:nth-child(1){
 margin-left: 0;
 }
+
 /* footer */
 
 footer{
@@ -592,8 +607,15 @@ footer{
     border-radius: 50%;
     width: 44px;
     height: 44px;
-
+    fill: var(--primary-bg-color);
 }
+.button-icon-footer:hover,
+.button-icon-footer:focus,
+.button-icon-footer-fb:focus,
+.button-icon-footer-fb:hover{
+    background-color: var(--active-link-color);
+}
+
 .button-icon-footer-if{
     border: none;
     border-radius: 50%;
@@ -601,6 +623,7 @@ footer{
     height: 44px;
     background-position: center;
     background-color: var(--active-link-color) ;
+    fill: var(--primary-bg-color);
 }
 .button-icon-footer-fb{
     display: block;
@@ -609,7 +632,7 @@ footer{
     border-radius: 50%;
     width: 44px;
     height: 44px;
-
+    fill: var(--primary-bg-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* portfolio */
@@ -674,6 +697,10 @@ color:var(--active-link-color);
 }
 
 
+.item-foto:hover, 
+.item-foto:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .port-photo{
     width: 1200px;
     display: flex;
@@ -683,7 +710,7 @@ color:var(--active-link-color);
     margin-top: 0;
     margin-bottom: 0;
 }
-.port-photo > .item{
+.port-photo > .item-foto{
     flex-basis: calc(100% / 3 - var(--card-set-gap));
    
     
@@ -725,4 +752,5 @@ color:var(--active-link-color);
 .card-content{
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    
 }
