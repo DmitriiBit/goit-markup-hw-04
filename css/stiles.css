@@ -157,9 +157,7 @@ ul{
   
 }
 
-.before-connection{
-    margin: 0;
-}
+
 
  .mail-logo{
     
@@ -184,18 +182,15 @@ ul{
    
 }
 
-.phone-logo:hover,
-.mail-logo:hover,
-.phone-logo:focus,
-.mail-logo:focus{
-    fill: var(--active-link-color);
-}
 
 .mail:hover,
 .mail:focus{
     color:var(--active-link-color);
 }
-
+.mail:hover svg,
+.mail:focus svg{
+    fill:var(--active-link-color);
+}
 .phone{
     display: flex;
     align-items: center;
@@ -214,11 +209,11 @@ ul{
     color:var(--active-link-color);
 }
 
-.connection:hover,
-.connection:focus{
-    color:var(--active-link-color);
-   
+.phone:hover svg, 
+.phone:focus svg{
+    fill:var(--active-link-color);
 }
+
 
 /* hero */
 .hero{
