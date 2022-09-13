@@ -146,10 +146,7 @@ ul{
    margin-left: auto;
    font-weight: 500;
 }
-.icon-mail{
-   
-    margin-left: 10px;
-}
+
 .mail{
     display: flex;
     align-items: center;
@@ -176,12 +173,12 @@ ul{
    
     width: 10px;
     height: 16px;
-    margin-left: 30px;
+    
     margin-right: 10px;
     fill: var(--primary-text-color);
 }
 .icon-phone{
-   
+   margin-left: 30px;
     fill: var(--primary-text-color);
     
    
