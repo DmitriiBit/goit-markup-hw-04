@@ -152,7 +152,7 @@ ul{
 .icon-mail{
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .mail{
     
@@ -162,44 +162,40 @@ ul{
     text-decoration: none;
   
 }
-.icon-mail::before{
-    content: "";
-    width: 16px;
-    height: 12px;
-    fill: var(--icon-fill-color);
-    margin-right: 10px;
-    display: inline-block;
-    background-image: url(../img/envelope\ \(1\).svg);
-   
-   
+
+.before-connection{
+    margin: 0;
 }
 
+.mail-logo{
+    display: flex;
+    align-items: center;
+    fill: var(--primary-text-color);
+    width: 16px;
+    height: 12px;
+}
 
+.phone-logo{
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 16px;
+    margin-left: 30px;
+    fill: var(--primary-text-color);
+}
+.icon-phone{
+    fill: var(--primary-text-color);
+    
+    margin-left: 10px;
+}
 
-.mail:hover::before{
+.phone-logo:hover,
+.mail-logo:hover,
+.phone-logo:focus,
+.mail-logo:focus{
     fill: var(--active-link-color);
 }
 
-.icon-phone{
-    fill: var(--primary-text-color);
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-}
-
-.icon-phone::before{
-    content: "";
-    width: 10px;
-    height: 16px;
-    
-    margin-right: 10px;
-    background-image: url("../img/Vector\ \(1\).svg");
-   fill: var(--primary-text-color);
-   
-}
-.icon-phone:hover::before{
-    fill: #2196F3;
-}
 .mail:hover,
 .mail:focus{
     color:var(--active-link-color);
