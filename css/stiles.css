@@ -117,7 +117,7 @@ ul{
     margin-top: 0;
     padding-left: 0;
  }
- .site-nav.active{
+ .site-nav-active{
     color: var(--active-link-color);
     }
     .site-nav .site-nav{
@@ -444,16 +444,17 @@ section{
 
 .action{
     display: flex;
-    align-items: center;
-    padding: 0 32px;
+    
+    justify-content: center;
     margin-bottom: 0;
     
 }
 .svg{
+    
     width: 20px;
     height: 20px;
     padding: 0;
-    margin: 0 auto;
+   
 }
   .list-social{
     
@@ -469,7 +470,7 @@ section{
     height: 44px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
     border: none;
     border-radius: 50%;
     background-color: var(--primary-bg-color);
@@ -505,12 +506,11 @@ section{
 
 .client-item{
     display: flex;
-    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     margin-left: 30px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    
    
 }
 
@@ -519,20 +519,25 @@ section{
 }
 
 .client-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     fill: var(--icon-fill-color);
-    
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
 .client-logo{
-    width: 160px;
-    height: 60px;
-
+   width: 106px;
+   height: 60px;
 }
 
 .client-icon:hover,
 .client-icon:focus{
 fill: var(--active-link-color);
-
+border: 1px solid var(--active-link-color);
 }
 
 
@@ -561,10 +566,10 @@ footer{
     padding: 0;
 }
 
- .item{
+ .item-footer{
     margin-bottom: 9px;
 }
- .item:last-child{
+ .item-footer:last-child{
     margin-bottom: 0;
 }
 .address{
@@ -619,6 +624,7 @@ footer{
 .icon-footer{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 50%;
@@ -637,6 +643,7 @@ footer{
 .icon-footer-fb{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 50%;
